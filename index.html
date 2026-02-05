@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body
+    class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 font-sans selection:bg-purple-500 selection:text-white">
+    <div id="app">
+        <!-- Navbar will be injected here or hardcoded -->
+        <header
+            class="fixed w-full top-0 z-50 transition-all duration-300 backdrop-blur-md bg-white/70 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-800"
+            id="navbar">
+            <nav class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+                <a href="#"
+                    class="text-2xl font-bold tracking-tighter hover:text-purple-600 transition-colors">Port<span
+                        class="text-purple-600">folio</span>.</a>
+
+                <div class="hidden md:flex items-center gap-8 font-medium">
+                    <a href="#home" class="hover:text-purple-600 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-purple-600 transition-colors">About</a>
+                    <a href="#education" class="hover:text-purple-600 transition-colors">Education</a>
+                    <a href="#achievements" class="hover:text-purple-600 transition-colors">Achievements</a>
+                    <a href="#contact" class="hover:text-purple-600 transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden p-2 text-2xl">
+                    <i class="ph ph-list"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden md:hidden absolute top-16 left-0 w-full bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 p-6 flex flex-col gap-4 text-center shadow-xl">
+                <a href="#home" class="mobile-link hover:text-purple-600">Home</a>
+                <a href="#about" class="mobile-link hover:text-purple-600">About</a>
+                <a href="#education" class="mobile-link hover:text-purple-600">Education</a>
+                <a href="#achievements" class="mobile-link hover:text-purple-600">Achievements</a>
+                <a href="#contact" class="mobile-link hover:text-purple-600">Contact</a>
+            </div>
+        </header>
+
+        <main class="pt-16">
+            <!-- Hero Section -->
+            <section id="home" class="min-h-[85vh] flex items-center relative overflow-hidden" data-animate="zoom-in">
+                <!-- Background Image -->
+                <div class="absolute inset-0 z-0">
+                    <div class="absolute inset-0 bg-[url('/bghero.jpg')] bg-cover bg-center opacity-60 scale-90"
+                        style="mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);">
+                    </div>
+                </div>
+
+                <!-- Content placeholder -->
+                <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
+                    <div class="text-center md:text-left max-w-3xl mx-auto md:mx-0">
+                        <h1 class="text-4xl md:text-7xl font-bold mb-6 tracking-tight">
+                            Piolo B. <span class="text-white">Zaballero</span>
+                        </h1>
+                        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8">
+                            BSIT-3 Student | Graphic Artist & Video Editor
+                            <br>
+                            <span class="text-sm md:text-base opacity-80 mt-2 block">PIO @ Information Technology
+                                Organization | 21
+                                Years Old</span>
+                        </p>
+                        <a href="#about"
+                            class="px-6 py-2 md:px-8 md:py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full font-medium hover:scale-105 transition-transform inline-block">
+                            About Me
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="py-8 px-4 md:py-12 md:px-6 max-w-7xl mx-auto">
+                <h2 class="text-2xl md:text-4xl font-bold mb-8 text-center" data-animate="fade-down">About Me.</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="h-56 md:h-64 rounded-[6px] overflow-hidden" data-animate="slide-right">
+                        <img src="/profile-pic.jpg" alt="Piolo B. Zaballero"
+                            class="w-full h-full object-cover scale-110">
+                    </div>
+                    <div data-animate="slide-left">
+                        <h3 class="text-xl md:text-2xl font-bold mb-4">Active Student & Creative Mind.</h3>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                            I am currently a 3rd-year BSIT student at <strong>Polytechnic University of the Philippines
+                                Unisan Quezon</strong>.
+                            I serve as the PIO for the Information Technology Organization.
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                            My hobbies include coding, sleeping, watching movies, playing mobile games, watching TikTok
+                            videos, and listening to Horror Stories.
+                            I am an academic achiever (Dean's Lister & President's Lister) with a passion for graphic
+                            arts and video editing.
+                        </p>
+                        <div class="flex gap-4 flex-wrap">
+                            <!-- Skills Pills -->
+                            <span
+                                class="px-4 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full text-sm font-medium">Graphic
+                                Artist</span>
+                            <span
+                                class="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">Video
+                                Editor</span>
+                            <span
+                                class="px-4 py-2 bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-full text-sm font-medium">BSIT
+                                Student</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="education" class="py-8 px-4 md:py-12 md:px-6 max-w-7xl mx-auto">
+                <h2 class="text-2xl md:text-4xl font-bold mb-8 text-center" data-animate="fade-down">Education.</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Tertiary -->
+                    <div class="flex flex-col items-start gap-4 group bg-gray-50 dark:bg-gray-800/50 p-6 rounded-[6px] border border-gray-100 dark:border-gray-800"
+                        data-animate="slide-up">
+                        <div class="flex-1 text-left">
+                            <h3 class="text-2xl font-bold mb-2 text-gray-800 dark:text-gray-100">Polytechnic University
+                                Of the Philippines</h3>
+                            <p class="text-purple-600 font-medium mb-2">Unisan Quezon</p>
+                            <p class="text-gray-600 dark:text-gray-400">Bachelor of Science in Information Technology
+                                (BSIT)</p>
+                            <p class="text-gray-500 text-sm mt-2">Current (3rd Year)</p>
+                        </div>
+                    </div>
+
+                    <!-- Senior High -->
+                    <div class="flex flex-col items-start gap-4 group bg-gray-50 dark:bg-gray-800/50 p-6 rounded-[6px] border border-gray-100 dark:border-gray-800"
+                        data-animate="slide-up">
+                        <div class="flex-1 text-left">
+                            <h3 class="text-2xl font-bold mb-2 text-gray-800 dark:text-gray-100">Unisan Integrated
+                                Highschool</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Senior High School</p>
+                        </div>
+                    </div>
+
+                    <!-- Junior High -->
+                    <div class="flex flex-col items-start gap-4 group bg-gray-50 dark:bg-gray-800/50 p-6 rounded-[6px] border border-gray-100 dark:border-gray-800"
+                        data-animate="slide-up">
+                        <div class="flex-1 text-left">
+                            <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-gray-100">Binagbag
+                                Integrated
+                                Highschool</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Junior High School</p>
+                        </div>
+                    </div>
+
+                    <!-- Elementary -->
+                    <div class="flex flex-col items-start gap-4 group bg-gray-50 dark:bg-gray-800/50 p-6 rounded-[6px] border border-gray-100 dark:border-gray-800"
+                        data-animate="slide-up">
+                        <div class="flex-1 text-left">
+                            <h3 class="text-2xl font-bold mb-2 text-gray-800 dark:text-gray-100">Binagbag Elementary
+                                School</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Elementary Education</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="achievements" class="py-8 px-4 md:py-12 md:px-6 bg-gray-50 dark:bg-gray-800/50">
+                <h2 class="text-2xl md:text-4xl font-bold mb-10 text-center" data-animate="fade-down">Achievements.
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Achievement 1 -->
+                    <div data-animate="blur-in"
+                        class="bg-white dark:bg-gray-900 p-6 md:p-8 rounded-[6px] shadow-lg border border-gray-100 dark:border-gray-800 hover:-translate-y-2 transition-transform duration-300 group text-center">
+                        <div
+                            class="w-14 h-14 md:w-16 md:h-16 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 rounded-[6px] flex items-center justify-center text-2xl md:text-3xl mb-6 mx-auto group-hover:bg-yellow-600 group-hover:text-white transition-colors">
+                            <i class="ph ph-star"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">President's Lister</h3>
+                        <p class="text-gray-500 text-sm mb-6">Polytechnic University Of the Philippines</p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div data-animate="blur-in" style="transition-delay: 200ms;"
+                        class="bg-white dark:bg-gray-900 p-6 md:p-8 rounded-[6px] shadow-lg border border-gray-100 dark:border-gray-800 hover:-translate-y-2 transition-transform duration-300 group text-center">
+                        <div
+                            class="w-14 h-14 md:w-16 md:h-16 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-[6px] flex items-center justify-center text-2xl md:text-3xl mb-6 mx-auto group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                            <i class="ph ph-certificate"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Dean's Lister</h3>
+                        <p class="text-gray-500 text-sm mb-6">Polytechnic University Of the Philippines</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-8 px-4 md:py-12 md:px-6 max-w-3xl mx-auto text-center"
+                data-animate="fade-up">
+                <h2 class="text-2xl md:text-4xl font-bold mb-8">Let's Work Together.</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">Have a project in mind? Let's discuss how we
+                    can
+                    create something amazing.</p>
+                <div class="flex flex-col gap-4">
+                    <a href="mailto:piolozaballero131@gmail.com"
+                        class="text-lg md:text-xl font-medium underline decoration-purple-500 decoration-2 underline-offset-4 hover:text-purple-600 transition-colors">
+                        piolozaballero131@gmail.com
+                    </a>
+                    <a href="tel:09637952851"
+                        class="text-lg md:text-xl font-medium underline decoration-purple-500 decoration-2 underline-offset-4 hover:text-purple-600 transition-colors">
+                        0963 795 2851
+                    </a>
+
+                    <!-- Social Media Links -->
+                    <div class="flex flex-row justify-center gap-6 mt-4">
+                        <a href="https://www.facebook.com/piolo.zaballero.3" target="_blank" aria-label="Facebook"
+                            class="text-3xl hover:text-purple-600 transition-transform hover:-translate-y-1">
+                            <i class="ph ph-facebook-logo"></i>
+                        </a>
+                        <a href="https://github.com/Piolo2" target="_blank" aria-label="GitHub"
+                            class="text-3xl hover:text-purple-600 transition-transform hover:-translate-y-1">
+                            <i class="ph ph-github-logo"></i>
+                        </a>
+                        <a href="https://www.instagram.com/zblr_pilo?igsh=MWc1NHQweDNpYTlvOQ%3D%3D&utm_source=qr"
+                            target="_blank" aria-label="Instagram"
+                            class="text-3xl hover:text-purple-600 transition-transform hover:-translate-y-1">
+                            <i class="ph ph-instagram-logo"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="py-8 text-center text-gray-500 text-sm border-t border-gray-200 dark:border-gray-800">
+            &copy; 2024 Portfolio. Made by me alangan namang ikaw;.
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
